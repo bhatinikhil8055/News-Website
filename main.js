@@ -1,11 +1,9 @@
 console.log("Hello World!");
 
 let newsAccordian = document.getElementById('accordian');
-let country = 'in';
-let apiKey = 'd7d3fd1d72a54d7394b75f2943582fd5';
 
 const xhr = new XMLHttpRequest();
-xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiKey}`, true);
+xhr.open('GET', `https://saurav.tech/NewsAPI/top-headlines/category/health/in.json`, true);
 
 xhr.onload = function () {
     let json = JSON.parse(this.responseText);
